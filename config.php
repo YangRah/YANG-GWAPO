@@ -1,5 +1,5 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','yang');
+$conn = mysqli_connect('localhost','root','','IPT101');
 
 ?>
