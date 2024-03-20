@@ -1,13 +1,12 @@
 <?php
 session_start();
 
-// Check if user is not logged in, redirect to login page
 if(!isset($_SESSION['username'])) {
     header('Location: login_form.php');
     exit();
 }
 
-// Display username
+
 $username = $_SESSION['username'];
 ?>
 
@@ -19,7 +18,7 @@ $username = $_SESSION['username'];
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>welcome</title>
 
-   <!-- custom css file link  -->
+
    <link rel="stylesheet" href="style.css">
 
 </head>
