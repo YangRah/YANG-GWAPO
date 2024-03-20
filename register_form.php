@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
       if($pass != $cpass){
          $error[] = 'Passwords do not match!';
       }else{
-         $insert = "INSERT INTO form (username, password, lastname, firstname, middlename, email, status) VALUES ('$username', '$pass', '$lastname', '$firstname', '$middlename', '$email', '$status')";
+         $insert = "INSERT INTO form (username, password, lastname, firstname, middlename, email, status) VALUES ('$username', '$pass', '$lastname', '$firstname', '$middlename', '$email', '$status',)";
          mysqli_query($conn, $insert);
          header('location:login_form.php');
       }
@@ -42,14 +42,14 @@ if(isset($_POST['submit'])){
    <title>Register Form</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
    
 <div class="form-container">
    <form action="" method="post">
-      <h2>Register Now</h2>
+      <h3>Register Now</h3>
       <?php
       if(isset($error)){
          foreach($error as $error){
