@@ -1,0 +1,149 @@
+body {
+    background-image: url("yang1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login ug Welcome */
+.form-container,
+.welcome-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #202020;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(236, 236, 236, 0.1);
+    text-align: center;
+	font-size: 25px;
+	font-style: normal;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+.form-container p {
+	color: white;
+}	
+/* Hover effect for containers */
+.form-container:hover,
+.welcome-container:hover {
+    transform: translateY(-10px);
+}
+
+/* login and Welcome Headings */
+.form-container h1,
+.welcome-container h3 {
+	margin: 30px;
+    color: #1c8be6;
+    font-size: 60px;
+    font-style: normal;
+}
+.welcome-container p {
+	font-size:30px;
+	color:white;
+	margin:5px;
+}	
+/* Form Elements */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color: #727272;
+    transition: all 0.3s ease;
+	font-size:20px;
+}
+.form-container h2 {
+	color: #1c8be6;
+	font-size: 60px;
+	margin: 10px 0;
+	
+}
+/* Submit boshit na button na */
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #0054a3;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.form-container input[type="submit"]:hover {
+    background-color: #004b91;
+}
+
+/* Error Message */
+.error-msg {
+    color: #c00;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Logout Button */
+.form-container p a,
+.welcome-container p a {
+    text-decoration: none;
+    color: #0070c9;
+    transition: color 0.3s ease;
+}
+
+.form-container p a:hover,
+.welcome-container p a:hover {
+    text-decoration: underline;
+    color: #004b91;
+}
+
+/* Index Styles */
+.index-container {
+max-width: 400px;
+    margin: 50px auto;
+    background-color: #202020;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(236, 236, 236, 0.1);
+    text-align: center;
+	font-size: 25px;
+	font-style: normal;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+/* Hover effect para sa index */
+.index-container:hover {
+    transform: translateY(-10px);
+}
+
+.index-container h1 {
+    color: #1c8be6;
+    font-size: 50px;
+}
+
+.index-container p {
+    color: #333;
+}
+
+.index-container a {
+    color: #0070c9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.index-container a:hover {
+    color: #004b91;
+}
